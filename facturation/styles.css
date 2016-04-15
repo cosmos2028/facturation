@@ -1,0 +1,112 @@
+body
+{
+	font-family: Georgia;
+	margin: 0;
+	padding: 0;
+}
+ul
+{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+#container
+{
+	width: 740px;
+	height: 500px;
+	border: 1px solid #fff;
+	margin: 0 auto;
+}
+header
+{
+	text-align: center;
+	text-decoration: none;
+}
+.titre
+{
+	font-size: 40px;
+	text-align: center;
+	color: #FEC816;
+}
+/* menu principal*/
+.nav >li
+{	
+	border-top: 2px solid #E02033;
+	border-bottom: 2px solid #E02033;
+	font-weight : bold;
+}
+.nav > li 
+{
+	display: inline-block; /* permet de mettre liste en verticale*/
+	vertical-align:top;
+	width: 185px;
+	margin: 0 -5px 0 0;	
+}
+.nav > li > a
+{
+	display: block;
+	color: black;
+	text-decoration: none;
+	font-weight: bolt;
+	width: inherit;
+	height: inherit;
+	text-align: center;
+	line-height: 40px;
+	webkit-transition: all ease-in 0.3s;	
+}
+.nav > li:hover > a 
+{
+	color: #FEC816;	
+}
+/* menu secondaire*/
+.nav > li > .dropdown 
+{
+	display: none;
+}
+.nav > li:hover > .dropdown
+{
+	display: block;
+}
+.nav > li > .dropdown >li
+{
+	width: inherit;
+	height: 40px;
+}
+.nav > li > .dropdown >li > a
+{
+	display: block;
+	width: inherit;
+	height: inherit;
+	line-height: 40px;
+	padding: 0,0,0,5px;
+	color: black;
+	text-decoration: none;
+	text-align: center;
+	border-top: 2px solid #E02033;
+	border-right: 2px solid #E02033;
+	border-left: 2px solid #E02033;
+}
+.nav > li > .dropdown >li:hover > a
+{
+	color:#FEC816;
+}
+label /* aligner les labels*/
+{
+	display: block; /* La balise devient de type block pour pouvoir appliquer largeur*/
+	width: 177px;
+	float: left; /* pour eviter le retour à la ligne et mettre formulaires à gauche*/
+}
+h1 /* colorier et souligner mes titres*/
+{
+	text-align: center;
+	color: #FEC816;
+}
+#ContactForm {
+   position:absolute;
+   top:50%;
+   left:50%;
+   width: 500px; /* A toi de donner la bonne largeur */
+   height: 100px; /* A toi de donner la bonne hauteur */
+   margin-left: -210px; /* -largeur/2 */
+   margin-top: 50px; /* -hauteur/2 */  
+}
